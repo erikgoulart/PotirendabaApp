@@ -1,0 +1,55 @@
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  PotirendabaApp -> D:\Projetos\TCC\codigos\bin\Debug\net8.0-windows\PotirendabaApp.dll
+  PotirendabaApp.Tests -> D:\Projetos\TCC\codigos\PotirendabaApp.Tests\bin\Debug\net8.0-windows\PotirendabaApp.Tests.dll
+Test run for D:\Projetos\TCC\codigos\PotirendabaApp.Tests\bin\Debug\net8.0-windows\PotirendabaApp.Tests.dll (.NETCoreApp,Version=v8.0)
+VSTest version 17.13.0 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET 8.0.30)
+[xUnit.net 00:00:00.07]   Discovering: PotirendabaApp.Tests
+[xUnit.net 00:00:00.34]   Discovered:  PotirendabaApp.Tests
+[xUnit.net 00:00:00.35]   Starting:    PotirendabaApp.Tests
+  Passed PotirendabaApp.Tests.Unitarios.LoteTests.DiasParaVencer_conta_os_dias_entre_hoje_e_a_validade(dias: 10) [9 ms]
+  Passed PotirendabaApp.Tests.Unitarios.LoteTests.DiasParaVencer_conta_os_dias_entre_hoje_e_a_validade(dias: -3) [< 1 ms]
+  Passed PotirendabaApp.Tests.Unitarios.LoteTests.DiasParaVencer_conta_os_dias_entre_hoje_e_a_validade(dias: 0) [< 1 ms]
+  Passed PotirendabaApp.Tests.Unitarios.LoteTests.DiasParaVencer_com_data_invalida_retorna_valor_maximo [< 1 ms]
+  Passed PotirendabaApp.Tests.Unitarios.VendaServiceCalculoTests.Validar_aceita_venda_completa [< 1 ms]
+  Passed PotirendabaApp.Tests.Unitarios.VendaServiceCalculoTests.CalcularValorItem_aplica_o_desconto_informado(desconto: "10%", esperado: 18) [4 ms]
+  Passed PotirendabaApp.Tests.Unitarios.VendaServiceCalculoTests.CalcularValorItem_aplica_o_desconto_informado(desconto: "", esperado: 20) [< 1 ms]
+  Passed PotirendabaApp.Tests.Unitarios.VendaServiceCalculoTests.CalcularValorItem_aplica_o_desconto_informado(desconto: "50", esperado: 0) [< 1 ms]
+  Passed PotirendabaApp.Tests.Unitarios.VendaServiceCalculoTests.CalcularValorItem_aplica_o_desconto_informado(desconto: "5,50", esperado: 14,5) [< 1 ms]
+  Passed PotirendabaApp.Tests.Unitarios.VendaServiceCalculoTests.CalcularValorItem_aplica_o_desconto_informado(desconto: "abc", esperado: 20) [< 1 ms]
+  Passed PotirendabaApp.Tests.Unitarios.VendaServiceCalculoTests.CalcularValorItem_aplica_o_desconto_informado(desconto: "5", esperado: 15) [< 1 ms]
+  Passed PotirendabaApp.Tests.Unitarios.VendaServiceCalculoTests.Validar_exige_pelo_menos_um_item [< 1 ms]
+  Passed PotirendabaApp.Tests.Unitarios.VendaServiceCalculoTests.Validar_exige_aluno [< 1 ms]
+  Passed PotirendabaApp.Tests.Unitarios.VendaServiceCalculoTests.Validar_exige_forma_de_pagamento [< 1 ms]
+  Passed PotirendabaApp.Tests.Integracao.EstoqueEVendaTests.Finalizar_venda_grava_uma_linha_por_lote_consumido_com_LoteId [151 ms]
+  Passed PotirendabaApp.Tests.Integracao.EstoqueEVendaTests.Desativar_um_lote_retira_o_saldo_dele_do_estoque [91 ms]
+  Passed PotirendabaApp.Tests.Integracao.EstoqueEVendaTests.Estoque_do_produto_e_a_soma_dos_lotes_ativos [81 ms]
+  Passed PotirendabaApp.Tests.Unitarios.LoteServiceAvaliarTests.Avaliar_classifica_pelo_numero_de_dias_restantes(diasParaVencer: 3, esperado: Descarte) [2 ms]
+  Passed PotirendabaApp.Tests.Unitarios.LoteServiceAvaliarTests.Avaliar_classifica_pelo_numero_de_dias_restantes(diasParaVencer: 7, esperado: Promocao) [< 1 ms]
+  Passed PotirendabaApp.Tests.Unitarios.LoteServiceAvaliarTests.Avaliar_classifica_pelo_numero_de_dias_restantes(diasParaVencer: 4, esperado: Promocao) [< 1 ms]
+  Passed PotirendabaApp.Tests.Unitarios.LoteServiceAvaliarTests.Avaliar_classifica_pelo_numero_de_dias_restantes(diasParaVencer: -5, esperado: Descarte) [< 1 ms]
+  Passed PotirendabaApp.Tests.Unitarios.LoteServiceAvaliarTests.Avaliar_classifica_pelo_numero_de_dias_restantes(diasParaVencer: 0, esperado: Descarte) [< 1 ms]
+  Passed PotirendabaApp.Tests.Unitarios.LoteServiceAvaliarTests.Avaliar_classifica_pelo_numero_de_dias_restantes(diasParaVencer: 30, esperado: Nenhuma) [< 1 ms]
+  Passed PotirendabaApp.Tests.Unitarios.LoteServiceAvaliarTests.Avaliar_classifica_pelo_numero_de_dias_restantes(diasParaVencer: 8, esperado: Nenhuma) [< 1 ms]
+  Passed PotirendabaApp.Tests.Unitarios.LoteServiceAvaliarTests.Avaliar_sem_data_de_validade_valida_nao_gera_alerta [< 1 ms]
+  Passed PotirendabaApp.Tests.Unitarios.LoteServiceAvaliarTests.Limites_de_alerta_sao_7_e_3_dias [< 1 ms]
+  Passed PotirendabaApp.Tests.Integracao.LoteServiceConsumirFefoTests.Ignora_lotes_inativos [85 ms]
+[xUnit.net 00:00:01.50]   Finished:    PotirendabaApp.Tests
+  Passed PotirendabaApp.Tests.Integracao.LoteServiceConsumirFefoTests.Venda_com_um_lote_debita_o_lote_e_recalcula_o_estoque [138 ms]
+  Passed PotirendabaApp.Tests.Integracao.LoteServiceConsumirFefoTests.Nao_consome_lote_ja_vencido [92 ms]
+  Passed PotirendabaApp.Tests.Integracao.LoteServiceConsumirFefoTests.Venda_maior_que_o_lote_mais_proximo_divide_o_consumo_entre_lotes [101 ms]
+  Passed PotirendabaApp.Tests.Integracao.LoteServiceConsumirFefoTests.Quantidade_sem_lote_suficiente_fica_registrada_sem_lote [78 ms]
+  Passed PotirendabaApp.Tests.Integracao.LoteServiceConsumirFefoTests.Prioriza_a_validade_e_nao_a_ordem_de_entrada [92 ms]
+  Passed PotirendabaApp.Tests.Integracao.LoteServiceConsumirFefoTests.Ignora_lotes_sem_saldo [78 ms]
+  Passed PotirendabaApp.Tests.Integracao.LoteServiceConsumirFefoTests.ListarProximosValidade_traz_so_lotes_na_janela_de_alerta_e_com_saldo [101 ms]
+
+Test Run Successful.
+Total tests: 34
+     Passed: 34
+ Total time: 1,9578 Seconds
+
+Workload updates are available. Run `dotnet workload list` for more information.

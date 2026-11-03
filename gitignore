@@ -1,0 +1,22 @@
+# Compilação
+bin/
+obj/
+publish/
+*.exe
+*.pdb
+
+# Visual Studio / VS Code / Rider
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+
+# Banco de dados local (é criado automaticamente na primeira execução)
+*.db
+*.db-shm
+*.db-wal
+
+# Resultados de testes
+TestResults/
+resultado_*.txt
